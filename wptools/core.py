@@ -380,9 +380,9 @@ class WPTools(object):
             if self.claims:
                 self.get_claims(False)
 
-        if action in ['parse', 'query', 'rest', 'wikidata']:
-            if self._missing_imageinfo() and not self._defer_imageinfo:
-                self.get_imageinfo(False)
+        # if action in ['parse', 'query', 'rest', 'wikidata']:
+        #     if self._missing_imageinfo() and not self._defer_imageinfo:
+        #         self.get_imageinfo(False)
 
         if show:
             self.show()
